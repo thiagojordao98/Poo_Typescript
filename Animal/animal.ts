@@ -18,3 +18,17 @@ class Cachorro extends Animal {
     this.raça = r;
   }
 }
+
+class Gente extends Animal {
+  cor: string;
+
+  constructor(t: string, n: string, i: number, c: string){
+  super(t, n, i)
+  this.cor = c;
+  }
+}
+
+//instanciando a classe cachorro
+let c1 = new Cachorro("cachorro", "bob", 2, "poodle");
+
+console.log(c1.raça)
